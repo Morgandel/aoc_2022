@@ -22,7 +22,6 @@ class Directories:
 
     def get_minimum_needed(self, total_used):
         result = 99999999999999999999999999999
-        print(self.name, total_used - self.total, total_used, self.total)
         if total_used - self.total <= 40000000:
             result = min(result, self.total)
         for dir in self.next_dir.values():
